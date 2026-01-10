@@ -1,0 +1,246 @@
+/* ===== GLOBAL ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(248, 230, 207);
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    background: rgb(52, 35, 21);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+header .logo h1 {
+    font-size: 22px;
+    margin: 0;
+    color: white;
+}
+
+header .logo h1 span {
+    color: rgb(186, 180, 171);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 30px;
+    font-size: 16px;
+    position: relative; /* for dropdown */
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== DROPDOWN MENU ===== */
+header ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(139, 121, 83);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    min-width: 150px;
+    border-radius: 4px;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+header ul li ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+/* ===== HEADER IMAGE ===== */
+.header-image {
+    width: 100%;
+    height: 300px;
+    overflow: visible;
+    margin-top: 0.5px;
+    box-shadow: 0 0 2px 2px #310505;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* makes image fit without stretching */
+    display: block;
+     -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: -moz-linear-gradient(black, transparent);
+   
+}
+
+/* HERO IMAGE CONTAINER */
+.hero {
+    position: relative;  /* important for overlay */
+    width: 100%;
+    height: 400px;       /* adjust height */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* fill without stretching */
+}
+
+/* HERO TEXT OVERLAY */
+.hero-text {
+    position: absolute;   
+    top: 25%;             /* vertical center */
+    left: 50%;            /* horizontal center */
+    transform: translate(-50%, -50%);
+    color: rgb(73, 51, 35);
+    text-align: center;
+
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 2px 2px rgb(121, 99, 76);
+}
+
+
+.hero-text p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+
+/* ===== BLOG LAYOUT ===== */
+.content {
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    gap: 20px;
+    align-items: stretch; /* sidebar same height as main content */
+}
+
+.main-content {
+    flex: 7; /* 70% width */
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.sidebar {
+    flex: 3; /* 30% width */
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #cdc8c8;
+    list-style: none; 
+    margin: 4px;
+}
+
+.title {
+    color: rgb(45, 39, 30);
+    margin-bottom: 20px;
+}
+
+.post {
+    display: flex;
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.post img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.post-preview {
+    padding: 15px;
+}
+
+.post-preview h3 {
+    margin-top: 0;
+}
+
+.preview-text {
+    color: #555;
+    font-style: normal;
+   
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 30px;
+    color: white;
+    background: rgb(80, 47, 8);
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    
+}
+
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #cdc8c8;
+    list-style: none; 
+    margin: 4px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: rgb(139, 121, 83);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .main-content, .sidebar {
+        flex: unset;
+        width: 100%;
+    }
+}
