@@ -1,116 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Blog</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Blog</title>
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <div class="logo">
-        <h1 class="logo-text"><span>Beauty</span>Blog</h1>
-    </div>
+  <div class="logo">
+    <h1><span>Beauty</span>Blog</h1>
+  </div>
 
-    <ul class="navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Profile</a></li>
-    </ul>
+  <!-- HAMBURGER -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Categories</a></li>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">Profile</a></li>
+  </ul>
 </header>
 <div class="header-image">
-    <img src="i1.jpg" alt="Header Image">
-    <div class="hero-text">
-        <h1>Welcome to BeautyBlog</h1>
-        <p>Tips, tricks, and inspiration for your beauty journey</p>
-
-    </div>
+  <img src="i1.jpg" alt="Header Image">
+  <div class="hero-text">
+    <h1>Welcome to <span>Beauty</span>Blog</h1>
+    <p>Tips, tricks, and inspiration for your beauty journey</p>
+  </div>
 </div>
+
 
 <div class="content">
 
-    <div class="main-content">
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <h2 class="title">Famous Posts</h2>
 
-        <h2 class="title">Famous Posts</h2>
-
-        <div class="post">
-            <img src="b.jpg" alt="Post image">
-            <div class="post-preview">
-                <h3>Let's get bold with our base products</h3>
-                <p class="preview-text">
-                    The key to a flawless and seamless look lies to the base of our makeup
-                </p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-        </div>
-
-        <div class="post">
-            <img src="b.jpg" alt="Post image">
-            <div class="post-preview">
-                <h3>Makeup Tips for Beginners</h3>
-                <p class="preview-text">
-                    Easy makeup tips and tricks perfect for those just starting their beauty journey.
-                </p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-        </div>
-
-        <div class="post">
-            <img src="b.jpg" alt="Post image">
-            <div class="post-preview">
-                <h3>Makeup Tips for Beginners</h3>
-                <p class="preview-text">
-                    Easy makeup tips and tricks perfect for those just starting their beauty journey.
-                </p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-        </div>
-
-        
-        <div class="post">
-            <img src="b.jpg" alt="Post image">
-            <div class="post-preview">
-                <h3>Makeup Tips for Beginners</h3>
-                <p class="preview-text">
-                    Easy makeup tips and tricks perfect for those just starting their beauty journey.
-                </p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-        </div>
-
-
-      
-
+    <div class="post">
+      <img src="b.jpg" alt="">
+      <div class="post-preview">
+        <h3>Let's get bold with our base products</h3>
+        <p class="preview-text">The key to a flawless base starts with prep.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
     </div>
-    <div class="sidebar">
-        <h2 class="section-title">Categories</h2>
-        <ul>
-            <li>Skincare</li>
-            <li>Makeup</li>
-            <li>Hair Care</li>
-            <li>Self Care</li>
-        </ul>
 
-        <h2 class="section-title">Recent Posts</h2>
-        <ul>
-            <li>Morning Skincare Routine</li>
-            <li>Best Lipstick Shades</li>
-            <li>Natural Face Masks</li>
-             <li>Morning Skincare Routine</li>
-            <li>Best Lipstick Shades</li>
-            <li>Natural Face Masks</li>
-             <li>Morning Skincare Routine</li>
-            <li>Best Lipstick Shades</li>
-            <li>Natural Face Masks</li>
-             <li>Morning Skincare Routine</li>
-            <li>Best Lipstick Shades</li>
-        </ul>
+    <div class="post">
+      <img src="2.jpg" alt="">
+      <div class="post-preview">
+        <h3>Makeup Tips for Beginners</h3>
+        <p class="preview-text">Easy tips for starting your beauty journey.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
     </div>
+
+    <div class="post">
+      <img src="4.jpg" alt="">
+      <div class="post-preview">
+        <h3>Top 5 Skincare Mistakes</h3>
+        <p class="preview-text">Avoid these common mistakes for healthier skin.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="q1.jpg" alt="">
+      <div class="post-preview">
+        <h3>Evening Beauty Routine</h3>
+        <p class="preview-text">Step-by-step evening routine for glowing skin.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="4.jpg" alt="">
+      <div class="post-preview">
+        <h3>Morning Skincare Tips</h3>
+        <p class="preview-text">Start your day fresh with these skincare hacks.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>Categories</h2>
+    <ul>
+      <li>Skincare</li>
+      <li>Makeup</li>
+      <li>Hair Care</li>
+      <li>Self Care</li>
+    </ul>
+
+    <h2>Recent Posts</h2>
+    <ul>
+      <li>Morning Skincare Routine</li>
+      <li>Best Lipstick Shades</li>
+      <li>Natural Face Masks</li>
+      <li>Self Care Sundays</li>
+      <li>Evening Beauty Routine</li>
+      <li>Top 5 Skincare Mistakes</li>
+    </ul>
+
+    <div class="sidebar-social">
+      <p>Follow us:</p>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </aside>
+
 </div>
 
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 BeautyBlog by riri. All Rights Reserved.</p>
+  <div class="social-media">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.navbar').classList.toggle('active');
+}
+</script>
 
 </body>
 </html>
+
